@@ -13,8 +13,8 @@ $request = [
 $task = new Task();
 $result = $task->create($request);
 
-if ($result) {
-    header("Location: ../index.php");
-} else {
+if ($result->connect_error) {
     echo "Error BD: Transaction error";
+} else {
+    header("Location: ../index.php");
 }

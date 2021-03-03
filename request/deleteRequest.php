@@ -7,8 +7,8 @@ $id = $_GET['id'];
 $task = new Task();
 $result = $task->delete($id);
 
-if ($result) {
-    header("Location: ../index.php");
-} else {
+if ($result->connect_error) {
     echo "Error BD: Transaction error";
+} else {
+    header("Location: ../index.php");
 }
