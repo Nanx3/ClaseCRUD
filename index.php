@@ -17,7 +17,7 @@ and open the template in the editor.
         
         <div class="container p-4">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <!-- formulario -->
                     <form method="POST" action="request/createRequest.php">
                         <div class="form-group">
@@ -37,7 +37,7 @@ and open the template in the editor.
                           <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <table class="table">
                        <thead>
                          <tr>

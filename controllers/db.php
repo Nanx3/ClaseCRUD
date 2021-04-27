@@ -22,10 +22,3 @@ class Connection {
         $connection->close();
     }
 }
-/*
-$conn = new Connection();
-if($conn->create()) {
-    echo 'Conexión establecida';
-} else {
-    echo 'Problema bd';
-} */
